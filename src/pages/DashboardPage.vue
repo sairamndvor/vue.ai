@@ -5,28 +5,8 @@
       <p class="text-subtitle1 text-grey-7">Welcome to your dashboard overview</p>
     </div>
 
-    <!-- Tabs -->
-    <q-card>
-      <q-tabs
-        v-model="tab"
-        dense
-        class="text-grey"
-        active-color="primary"
-        indicator-color="primary"
-        align="justify"
-      >
-        <q-tab name="overview" icon="dashboard" label="Overview" />
-        <q-tab name="graphs" icon="bar_chart" label="Graphs" />
-        <q-tab name="performance" icon="speed" label="Performance" />
-      </q-tabs>
-
-      <q-separator />
-
-      <q-tab-panels v-model="tab" animated>
-        <!-- Overview Tab -->
-        <q-tab-panel name="overview">
-          <!-- Stats Cards -->
-          <div class="row q-col-gutter-md q-mb-md">
+    <!-- Stats Cards -->
+    <div class="row q-col-gutter-md q-mb-md">
             <div class="col-12 col-sm-6 col-md-3">
               <q-card>
                 <q-card-section class="bg-primary text-white">
@@ -92,8 +72,8 @@
             </div>
           </div>
 
-          <!-- Charts and Data -->
-          <div class="row q-col-gutter-md">
+    <!-- Charts and Data -->
+    <div class="row q-col-gutter-md q-mb-md">
             <div class="col-12 col-md-8">
               <q-card>
                 <q-card-section>
@@ -170,11 +150,12 @@
               </q-card>
             </div>
           </div>
-        </q-tab-panel>
 
-        <!-- Graphs Tab -->
-        <q-tab-panel name="graphs">
-          <div class="row q-col-gutter-md">
+    <!-- Graphs Section -->
+    <div class="q-pb-md q-pt-lg">
+      <h4 class="text-h4 q-my-md">Graphs & Analytics</h4>
+    </div>
+    <div class="row q-col-gutter-md q-mb-md">
             <div class="col-12 col-md-6">
               <q-card>
                 <q-card-section>
@@ -255,12 +236,52 @@
                 </q-card-section>
               </q-card>
             </div>
-          </div>
-        </q-tab-panel>
 
-        <!-- Performance Tab -->
-        <q-tab-panel name="performance">
-          <div class="row q-col-gutter-md">
+            <!-- Second Image Graph -->
+            <div class="col-12 col-md-6">
+              <q-card>
+                <q-card-section>
+                  <div class="text-h6">Sales Trends</div>
+                </q-card-section>
+                <q-separator />
+                <q-card-section class="text-center">
+                  <q-icon name="trending_up" size="120px" color="warning" />
+                  <div class="text-subtitle1 q-mt-md text-grey-7">Area chart displaying sales trends and forecasts</div>
+                  <div class="q-mt-md">
+                    <q-linear-progress size="25px" :value="0.85" color="warning">
+                      <div class="absolute-full flex flex-center">
+                        <q-badge color="white" text-color="warning" label="85% Target Achieved" />
+                      </div>
+                    </q-linear-progress>
+                  </div>
+                </q-card-section>
+              </q-card>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <q-card>
+                <q-card-section>
+                  <div class="text-h6">Market Analysis</div>
+                </q-card-section>
+                <q-separator />
+                <q-card-section class="text-center">
+                  <q-icon name="assessment" size="120px" color="deep-purple" />
+                  <div class="text-subtitle1 q-mt-md text-grey-7">Radar chart showing market position analysis</div>
+                  <div class="q-mt-md row q-gutter-sm justify-center">
+                    <q-chip color="deep-purple" text-color="white">Market Share 28%</q-chip>
+                    <q-chip color="primary" text-color="white">Growth Rate 18%</q-chip>
+                    <q-chip color="positive" text-color="white">Customer Retention 92%</q-chip>
+                  </div>
+                </q-card-section>
+              </q-card>
+            </div>
+          </div>
+
+    <!-- Performance Section -->
+    <div class="q-pb-md q-pt-lg">
+      <h4 class="text-h4 q-my-md">Performance Metrics</h4>
+    </div>
+    <div class="row q-col-gutter-md q-mb-md">
             <div class="col-12 col-md-6">
               <q-card>
                 <q-card-section>
@@ -428,24 +449,12 @@
               </q-card>
             </div>
           </div>
-        </q-tab-panel>
-      </q-tab-panels>
-    </q-card>
   </q-page>
 </template>
 
 <script>
-import { ref } from 'vue'
-
 export default {
-  name: 'DashboardPage',
-  setup() {
-    const tab = ref('overview')
-    
-    return {
-      tab
-    }
-  }
+  name: 'DashboardPage'
 }
 </script>
 
