@@ -1,13 +1,7 @@
 <template>
   <q-page class="flex flex-center">
     <div class="q-pa-md text-center">
-      <div class="q-mb-xl">
-        <q-icon name="home" size="120px" color="primary" />
-      </div>
-      <h2 class="text-h2 text-weight-bolder q-mb-md">Welcome to Vue.AI</h2>
-      <p class="text-h6 text-grey-7 q-mb-xl">
-        A powerful Vue.js application with Quasar Framework
-      </p>
+      <h2 style="color:black">Welcome to RADAR!</h2>
       
       <div class="q-gutter-md">
         <q-btn 
@@ -62,7 +56,6 @@ export default {
 
 <style scoped>
 .q-page {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   color: white;
 }

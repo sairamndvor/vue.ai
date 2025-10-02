@@ -1,4 +1,4 @@
-# vue.ai
+# RADAR
 
 A Vue.js application with Quasar Framework featuring Home and Dashboard screens.
 

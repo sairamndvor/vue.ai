@@ -25,7 +25,7 @@
 
             <div class="col-12 col-sm-6 col-md-3">
               <q-card>
-                <q-card-section class="bg-positive text-white">
+                <q-card-section class="text-white" style="background: #1db663 !important;">
                   <div class="row items-center">
                     <div class="col">
                       <div class="text-h6">Revenue</div>
@@ -41,7 +41,7 @@
 
             <div class="col-12 col-sm-6 col-md-3">
               <q-card>
-                <q-card-section class="bg-warning text-white">
+                <q-card-section class="text-white" style="background: #ca5757 !important;">
                   <div class="row items-center">
                     <div class="col">
                       <div class="text-h6">Projects</div>
@@ -57,7 +57,7 @@
 
             <div class="col-12 col-sm-6 col-md-3">
               <q-card>
-                <q-card-section class="bg-info text-white">
+                <q-card-section class="text-white" style="background: #a8a7e0 !important;">
                   <div class="row items-center">
                     <div class="col">
                       <div class="text-h6">Tasks</div>
@@ -194,48 +194,6 @@
               </q-card>
             </div>
 
-            <div class="col-12">
-              <q-card>
-                <q-card-section>
-                  <div class="text-h6">Monthly Statistics</div>
-                </q-card-section>
-                <q-separator />
-                <q-card-section class="text-center">
-                  <q-icon name="bar_chart" size="120px" color="info" />
-                  <div class="text-subtitle1 q-mt-md text-grey-7">Bar chart showing monthly performance metrics</div>
-                  <div class="q-mt-md row q-col-gutter-sm">
-                    <div class="col-3">
-                      <q-linear-progress size="80px" :value="0.65" color="primary" vertical>
-                        <div class="absolute-full flex flex-center">
-                          <span class="text-white">Jan</span>
-                        </div>
-                      </q-linear-progress>
-                    </div>
-                    <div class="col-3">
-                      <q-linear-progress size="80px" :value="0.80" color="positive" vertical>
-                        <div class="absolute-full flex flex-center">
-                          <span class="text-white">Feb</span>
-                        </div>
-                      </q-linear-progress>
-                    </div>
-                    <div class="col-3">
-                      <q-linear-progress size="80px" :value="0.55" color="warning" vertical>
-                        <div class="absolute-full flex flex-center">
-                          <span class="text-white">Mar</span>
-                        </div>
-                      </q-linear-progress>
-                    </div>
-                    <div class="col-3">
-                      <q-linear-progress size="80px" :value="0.90" color="info" vertical>
-                        <div class="absolute-full flex flex-center">
-                          <span class="text-white">Apr</span>
-                        </div>
-                      </q-linear-progress>
-                    </div>
-                  </div>
-                </q-card-section>
-              </q-card>
-            </div>
 
             <!-- Second Image Graph -->
             <div class="col-12 col-md-6">
@@ -266,7 +224,7 @@
                 <q-separator />
                 <q-card-section class="text-center">
                   <q-icon name="assessment" size="120px" color="deep-purple" />
-                  <div class="text-subtitle1 q-mt-md text-grey-7">Radar chart showing market position analysis</div>
+                  <div class="text-subtitle1 q-mt-md text-grey-7">RADAR chart showing market position analysis</div>
                   <div class="q-mt-md row q-gutter-sm justify-center">
                     <q-chip color="deep-purple" text-color="white">Market Share 28%</q-chip>
                     <q-chip color="primary" text-color="white">Growth Rate 18%</q-chip>

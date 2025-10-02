@@ -3,7 +3,7 @@
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
         <q-toolbar-title>
-          Vue.AI Application
+          RADAR Application
         </q-toolbar-title>
         <q-btn flat round dense icon="menu" class="q-mr-sm">
           <q-menu>
@@ -33,7 +33,7 @@
     <q-footer elevated class="bg-grey-8 text-white">
       <q-toolbar>
         <q-toolbar-title>
-          <div class="text-center">© 2025 Vue.AI</div>
+          <div class="text-center">© 2025 RADAR</div>
         </q-toolbar-title>
       </q-toolbar>
     </q-footer>
